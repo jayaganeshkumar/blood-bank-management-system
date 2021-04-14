@@ -48,12 +48,12 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-    .body {
+    /* .body {
         height: 100%;
         width: 100%;
         position: fixed;
         overflow-x: hidden;
-    }
+    } */
     .nav-links {
         position: absolute;
         right: 0px;
