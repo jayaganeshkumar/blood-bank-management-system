@@ -1,7 +1,7 @@
 <?php
-    require("connection.php");
-
-
+    session_start();
+    $_SESSION;
+    include("connection.php");
 ?>
 
 <html>
@@ -20,7 +20,7 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Donate</a></li>
-            <li id="login"><a href="#login-area">Login</a></li>
+            <li id="login"><a href="login.php">Login</a></li>
         </ul>
     </nav>
     <!-- Slideshow container -->
@@ -62,12 +62,11 @@
 <!-- login and features tab -->
 <div class="login-tab">
 <div class="left" style="float: left; width: 50%" >
-    <form class="login">
-    <input type="text" placeholder="Username"><br>
-    <input type="password" placeholder="Password"><br>
-    <button>Login</button><br>
+    <form class="login" id="navigation">
 
-    Not a registered user?, then <a href="register.php">click here</a> to register.
+    <a href="login.php" style="text-decoration: none" class="login-btn">Login</a><br><br>
+    <p>Not registered? Click below to register.</p>
+    <a href="register.php" class="register-btn">Register</a><br>
     </form>
 </div>
     
