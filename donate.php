@@ -4,6 +4,18 @@
     include('connection.php');
     include('functions.php');
 
+    function check_Data(){
+        if(isset($_POST['formSubmit'])) 
+        {
+    
+        if(!isset($_POST['formgender'],$_POST['formgender'],$_POST['formgender'],$_POST[''])) 
+        {
+            echo("<script>alert('Please fill all required fields.');</script>");
+        } 
+        
+       }
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -27,5 +39,9 @@
                 <li><a href="logout.php">Logout</a></li>
             </ul>
         </nav>
+
+    <section class="form-section">
+        <form>
+    </section>
 </body>
 </html>
