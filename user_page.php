@@ -15,12 +15,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Page</title>
+    <title>User Page - Blood Bank</title>
     <link rel="stylesheet" href="navbar.css" type="text/css">
 
     <style type="text/css">
     .quote img{width:85%;height:525px;align:center;padding-left:150px;}
-    .don-btn, .req-btn {
+    .don-btn{
     font-family: sans-serif;
     cursor: pointer;
     color: #fff;
@@ -28,6 +28,23 @@
     text-align: relative;
     text-transform: uppercase;
     width: 80px;
+    border: 0;
+    padding: 10px 0;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 200px;
+    border-radius: 5px;
+    background-color: rgba(244, 91, 105, 1);
+    @include transition(background-color 300ms);
+  }
+  .req-btn {
+    font-family: sans-serif;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    text-align: relative;
+    text-transform: uppercase;
+    width: 100px;
     border: 0;
     padding: 10px 0;
     padding-bottom: 10px;
@@ -84,19 +101,22 @@
                 <h4>Blood-Bank</h4>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="donate.php">Donate</a></li>
                 <li><a href="request.php">Request</a></li>
+                <li><a href="logout.php">Logout</a></li>
             </ul>
         </nav>
     <div class="quote">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNAiS5THMF6wBE33ZYkHTKk0D-yB0Q9T-5jA&usqp=CAU">
         </div>
-
+    <div class="intro">
+        <h2 style="text-align:center">Hello, <?php echo $userdata['username'] ?></h2>
+    </div>
     <div class="left don-btns" style="float: left; width: 50%" >
             <h3>Ready to donate anyday? Then click below.</h3>
-            <button type="submit" class="don-btn" onclick="window.location.href='donate.php';">>Donate</button>
+            <button type="submit" class="don-btn" onclick="window.location.href='donate.php';">Donate</button>
     </div>
 
     <div class="right" style="float: right; width: 50%">

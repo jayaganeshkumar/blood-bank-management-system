@@ -2,6 +2,12 @@
     session_start();
     $_SESSION;
     include("connection.php");
+    include("functions.php");
+    if(check_login($con)){
+    $_SESSION['username'] = check_login($con)['username'];}
+    else{
+        
+    }
 ?>
 
 <html>
@@ -17,10 +23,15 @@
             <h4>Blood-Bank</h4>
         </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Donate</a></li>
-            <li id="login"><a href="login.php">Login</a></li>
+            <li id="login"><?php
+            if(isset($_SESSION['username'])){?>
+                <a href="logout.php">Logout</a>
+        <?php }else{?>
+            <a href = "login.php">Login</a>
+        <?php } ?></li>
         </ul>
     </nav>
     <!-- Slideshow container -->
@@ -62,11 +73,14 @@
 <!-- login and features tab -->
 <div class="login-tab">
 <div class="left" style="float: left; width: 50%" >
-    <form class="login" id="navigation">
-
+    <form class="login" id="navigation"><?php
+    if(isset($_SESSION['username'])){?>
+                <p>You are already logged in.</p>
+        <?php }else{?>
+        
     <a href="login.php" style="text-decoration: none" class="login-btn">Login</a><br><br>
     <p>Not registered? Click below to register.</p>
-    <a href="register.php" class="register-btn">Register</a><br>
+    <a href="register.php" class="register-btn">Register</a><br><?php } ?>
     </form>
 </div>
     
