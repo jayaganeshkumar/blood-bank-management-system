@@ -59,6 +59,7 @@
     background-color: white;
     border-block-style: block;
     border-radius: 50%;
+    border-color: black;
     padding-bottom: 50px;
     margin-bottom: 80px;
     }
@@ -112,11 +113,18 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNAiS5THMF6wBE33ZYkHTKk0D-yB0Q9T-5jA&usqp=CAU">
         </div>
     <div class="intro">
-        <h2 style="text-align:center">Hello, <?php echo $userdata['username'] ?></h2>
+        <h2 style="text-align:center;padding-top:20px;padding-bottom:20px;">Hello, <?php echo $userdata['username'] ?></h2>
     </div>
-    <div class="left don-btns" style="float: left; width: 50%" >
+    <div class="left don-btns" style="float: left; width: 50%">
+    <?php 
+    $username = $userdata['username'];
+    $query = "select * FROM blood_bank WHERE username = '$username'";
+    $res = mysqli_query($con,$query);
+    if(mysqli_num_rows($res)>0){?> <h3>You are already registered as donor!</h3>
+    <?php }else{?>
             <h3>Ready to donate anyday? Then click below.</h3>
             <button type="submit" class="don-btn" onclick="window.location.href='donate.php';">Donate</button>
+            <?php } ?>
     </div>
 
     <div class="right" style="float: right; width: 50%">

@@ -25,7 +25,7 @@
         <ul class="nav-links">
             <li><a href="index.php">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Donate</a></li>
+            <li><a href="user_page.php">User-Page</a></li>
             <li id="login"><?php
             if(isset($_SESSION['username'])){?>
                 <a href="logout.php">Logout</a>
