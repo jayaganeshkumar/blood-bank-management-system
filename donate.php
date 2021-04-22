@@ -6,12 +6,11 @@
     $userdata = check_login($con);
     $id = $userdata['id'];
     $uname = $_SESSION['username'];
-    $que = "select * FROM blood_bank WHERE username='$uname' limit 1";
+    $que = "select * FROM blood_bank WHERE username='$uname'";
     
     $res = mysqli_query($con, $que);
-    if($res && mysqli_num_rows($res) > 0){
-        echo "<script>alert('You are already registered as donor!
-        redirecting to user page...');
+    if(mysqli_num_rows($res) > 0){
+        echo "<script>alert('You are already registered as donor!\n Redirecting to user page...');
         window.location.href='user_page.php';</script>";
     }
     else{
@@ -32,6 +31,7 @@
           }
         $dh = $_POST['disease_history'];
         $city = $_POST['city'];
+        $date = date('Y-m-d H:i:s');
 
         $query = "insert into blood_bank (id,username,name,fname,age,gender,mobilenumber,address,city,bgroup,dh) values('$id','$uname','$name','$fname','$age','$gender','$mobilenum','$address','$city','$bgroup','$dh') ";
         $result = mysqli_query($con,$query);
@@ -141,6 +141,14 @@
                     window.location.href = 'login.php';</script>"; } ?></li>
             </ul>
         </nav>
+        <div class="donation-log">
+            <?php
+                echo "<table>"
+            ?>
+        </div>
+
+
+
         <div class="quote">
         <img src="https://www.news-medical.net/image.axd?picture=2020%2F10%2Fshutterstock_603317201-1.jpg">
         </div>
