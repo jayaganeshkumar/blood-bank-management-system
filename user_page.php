@@ -5,8 +5,6 @@
     include("functions.php");
 
     $userdata = check_login($con);
-
-    
 ?>
 
 <!DOCTYPE html>
@@ -68,6 +66,7 @@
         margin-left: 100px;
         padding-top:80px;
         padding-bottom:40px;
+        color:rgb(255,0,255);
     }
 
     /* Control the right side */
