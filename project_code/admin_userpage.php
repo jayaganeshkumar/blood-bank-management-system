@@ -94,6 +94,10 @@
 
         <input type="submit" name="button2"
                 class="button" value="Update database"/>
+                <?php
+                if(array_key_exists('button2', $_POST)){
+                    echo "<script>window.open('http://localhost/phpmyadmin/index.php','_blank').focus();</script>";
+                }?>
     </form>
 </body>
 </html>

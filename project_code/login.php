@@ -147,9 +147,8 @@ box-shadow: 5px 7px 7px 5px rgba(2, 128, 144, 1);
             <h4>Blood-Bank</h4>
         </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Donate</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="aboutus.php">About</a></li>
             <li id="register"><a href="register.php">Register</a></li>
         </ul>
     </nav>

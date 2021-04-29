@@ -104,7 +104,7 @@
         </div>
         <ul class="nav-links">
             <li><a href="index.php">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="aboutus.php">About</a></li>
             <li><a href="donate.php">Donate</a></li>
             <li id="login"><?php
             if(isset($_SESSION['username'])){?>

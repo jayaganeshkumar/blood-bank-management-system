@@ -102,8 +102,8 @@
             <h4>Blood-Bank</h4>
         </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="aboutus.php">About</a></li>
             
             <li id="login"><a href="login.php">Login</a></li>
         </ul>
