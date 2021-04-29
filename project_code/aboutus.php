@@ -1,6 +1,8 @@
 <?php
 include('connection.php');
 include('functions.php');
+session_start();
+$_SESSION;
 ?>
 
 <!DOCTYPE html>

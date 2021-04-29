@@ -63,7 +63,7 @@
     
 <form method="post">
         <input type="submit" name="button1"
-                class="button" value="See Feedback"/>
+                class="button" value="See Feedbacks"/>
         <?php
 
             if(array_key_exists('button1', $_POST)){?>
