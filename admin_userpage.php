@@ -34,16 +34,16 @@
         text-align: left;
         border:1px solid black;
         text-align: center;
-        width: 100px;
-        height: 60px;
+        width: 70px;
+        height: 50px;
     }
     .donor-table th {
         padding: 15px;
         text-align: left;
         border:1px solid black;
         text-align: center;
-        width: 100px;
-        height: 60px;
+        width: 70px;
+        height: 5   0px;
         background-color: #f5f5f5
     }
     .donor-table tr:hover{
@@ -70,8 +70,9 @@
                     <div class="donor-table">
                     <table class="center">
                     <tr>
+                    <th>S.No</th>
                     <th class="name-tab">Name</th>
-                    <th>Donor Name</th>
+                    <th style="width:250px !important">Donor Name</th>
                     <th>Donor Mobile Number</th>
                     <th>Donor Blood Group</th>
                     <th>Feedback</th>
@@ -80,10 +81,11 @@
                     <?php
                     $tablequery = "select * from feedback";
                     $tableres = mysqli_query($con,$tablequery);
-                    
+                    $i=1;
                     while($tablearr = mysqli_fetch_assoc($tableres)){   //Creates a loop to loop through results
-                    echo "<tr><td>" .$tablearr['name']. "</td><td>" .$tablearr['dname']. "</td><td>" .$tablearr['mobiled']. "</td><td>" .ucfirst($tablearr['dbgroup']). "</td><td>" .$tablearr['feedback']. "</td><td>" .$tablearr['happyp']. "</td></tr>";  //$row['index'] the index here is a field name
-                    }
+                    echo "<tr><td>" .$i. "</td><td>" .$tablearr['name']. "</td><td>" .$tablearr['dname']. "</td><td>" .$tablearr['mobiled']. "</td><td>" .ucfirst($tablearr['dbgroup']). "</td><td>" .$tablearr['feedback']. "</td><td>" .$tablearr['happyp']. "</td></tr>";  //$row['index'] the index here is a field name
+                    $i++;
+                }
                 
                     echo "</table>"; //Close the table in HTML
                     ?>
@@ -91,7 +93,7 @@
                     </div>
 
         <input type="submit" name="button2"
-                class="button" value="Update database" />
+                class="button" value="Update database"/>
     </form>
 </body>
 </html>

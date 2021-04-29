@@ -109,7 +109,7 @@
             </ul>
         </nav>
     <div class="quote">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNAiS5THMF6wBE33ZYkHTKk0D-yB0Q9T-5jA&usqp=CAU">
+            <img src="imgs/userpage.jpeg">
         </div>
     <div class="intro">
         <h2 style="text-align:center;padding-top:20px;padding-bottom:20px;">Hello, <?php echo $userdata['username'] ?></h2>
@@ -136,7 +136,7 @@
 
 <footer>
     <div>
-        <p>Copyright &copy; Group-19</p>
+        <p>Copyright &copy; <a href="admin_login.php" target="_blank" style="text-decoration: none;color: white;">Group-19</a></p>
     </div>
 </footer>
 

@@ -105,11 +105,11 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             
-            <li id="login"><a href="register.php">Login</a></li>
+            <li id="login"><a href="login.php">Login</a></li>
         </ul>
     </nav>
     <div class="quote">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNAiS5THMF6wBE33ZYkHTKk0D-yB0Q9T-5jA&usqp=CAU">
+        <img src="imgs/register.jpg" alt="">
     </div>
     <div class="form">
     
@@ -124,7 +124,7 @@
 </body>
 <footer>
     <div>
-        <p>Copyright &copy; Group-19</p>
+        <p>Copyright &copy; <a href="admin_login.php" target="_blank" style="text-decoration: none;color: white;">Group-19</a></p>
     </div>
 </footer>
 </html>

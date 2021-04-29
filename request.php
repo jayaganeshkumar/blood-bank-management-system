@@ -114,7 +114,7 @@
         </ul>
     </nav>
     <div class="quote">
-        <img src="https://i2.wp.com/goodmorninglovequote.com/wp-content/uploads/2020/10/Blood-Donate-quotes-Is-A-Great-Act-Of-Kindness-4.jpg?resize=1024%2C576&ssl=1">
+        <img src="imgs/request.jpg">
     </div>
     <h3>Select the city name below, to know the donor's available.</h3>
 
@@ -167,7 +167,7 @@
 </body>
 <footer>
     <div>
-        <p>Copyright &copy; Group-19</p>
+        <p>Copyright &copy; <a href="admin_login.php" target="_blank" style="text-decoration: none;color: white;">Group-19</a></p>
     </div>
 </footer>
 </html>

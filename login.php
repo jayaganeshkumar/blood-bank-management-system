@@ -114,7 +114,7 @@ box-shadow: 5px 7px 7px 5px rgba(2, 128, 144, 1);
     margin-top:60px;
     margin-left:120px;
     border-radius: 10px;
-    position: absolute;
+    /* position: absolute; */
     padding-left: 80px;
     padding-right: 50px;
     padding-top: 50px;
@@ -156,7 +156,7 @@ box-shadow: 5px 7px 7px 5px rgba(2, 128, 144, 1);
 
 
     <div class="quote">
-        <img src="https://i2.wp.com/goodmorninglovequote.com/wp-content/uploads/2020/10/Blood-Donation-quotes-Is-A-Great-Act-Of-Kindness-3.jpg">
+        <img src="imgs/login.jpg">
     </div>
     <div class="login-facts">
     <div class="left" style="float: left; width: 50%" >
@@ -186,7 +186,7 @@ box-shadow: 5px 7px 7px 5px rgba(2, 128, 144, 1);
 </body>
 <footer>
     <div>
-        <p>Copyright &copy; Group-19</p>
+        <p>Copyright &copy; <a href="admin_login.php" target="_blank" style="text-decoration: none;color: white;">Group-19</a></p>
     </div>
 </footer>
 </html>

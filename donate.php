@@ -150,7 +150,7 @@
 
 
         <div class="quote">
-        <img src="https://www.news-medical.net/image.axd?picture=2020%2F10%2Fshutterstock_603317201-1.jpg">
+        <img src="imgs/donate.jpg">
         </div>
     <div class="form-section container">
         <form method="post">
@@ -239,7 +239,7 @@
 </body>
 <footer>
     <div>
-        <p>Copyright &copy; Group-19</p>
+        <p>Copyright &copy; <a href="admin_login.php" target="_blank" style="text-decoration: none;color: white;">Group-19</a></p>
     </div>
 </footer>
 </html>

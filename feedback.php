@@ -118,6 +118,16 @@
         display: table;
         clear: both;
     }
+    footer {
+    left: 0;
+    padding:10px;
+    /* position:fixed; */
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
     </style>
 </head>
 <body>
@@ -139,7 +149,7 @@
     </nav>
 
     <div class="quote">
-        <img src="https://www.feedbackexpress.com/wp-content/uploads/2016/04/amazon_feedback.jpg">
+        <img src="imgs/amazon_feedback.jpg">
     </div>
 
     <div class="y-feedback center" style="margin-left: 50px">
@@ -214,4 +224,9 @@
         </form>
     </div>
 </body>
+<footer>
+    <div>
+        <p>Copyright &copy; <a href="admin_login.php" target="_blank" style="text-decoration: none;color: white;">Group-19</a></p>
+    </div>
+</footer>
 </html>
