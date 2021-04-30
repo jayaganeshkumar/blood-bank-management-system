@@ -12,7 +12,7 @@ $_SESSION;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="css/navbar.css" type="text/css">
     <style>
         .quote img{width:90%;height:550px;align:center;padding-left:150px;padding-top:5px}
         h3{text-align:center;padding:50px}

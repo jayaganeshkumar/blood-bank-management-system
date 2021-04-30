@@ -45,7 +45,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="navbar.css" type="text/css">
+    <link rel="stylesheet" href="css/navbar.css" type="text/css">
     <title>Login</title>
     <style>
         .quote img{width:90%;height:575px;align:center;padding-left:150px;}

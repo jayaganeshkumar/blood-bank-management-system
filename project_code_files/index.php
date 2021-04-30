@@ -13,8 +13,8 @@
 <html>
 <head>
     <title>Blood Bank Donation</title>
-    <link rel="stylesheet" href="navbar.css" type="text/css">
-    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="css/navbar.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 
 <body>
@@ -40,7 +40,7 @@
 <!-- Full-width images with number and caption text -->
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="quote1.jpg" style="width:100%">
+  <img src="imgs/quote1.png" style="width:100%">
 </div>
 
 <div class="mySlides fade">
@@ -101,6 +101,6 @@
         <p>Copyright &copy; <a href="admin_login.php" target="_blank" style="text-decoration: none;color: white;">Group-19</a></p>
     </div>
 </footer>
-<script src="script.js"></script>
-<script src="slideshow.js"></script>
+<script src="js/script.js"></script>
+<script src="js/slideshow.js"></script>
 </html>
